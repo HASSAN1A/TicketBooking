@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<header>
+<div class="bgimg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand text-warning font-weight-bold " href="#"><h4>Tickets</h4></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="manager.html">Manager<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Terminal Staff</a>
+                    </li> <li class="nav-item active">
+                        <a class="nav-link" href="#">Driver</a>
+                    </li></li> <li class="nav-item active">
+                        <a class="nav-link" href="#">Security</a>
+                    </li>
+<!--                    <li class="nav-item dropdown active">-->
+<!--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                            Dropdown-->
+<!--                        </a>-->
+<!--                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                            <a class="dropdown-item" href="#">Action</a>-->
+<!--                            <a class="dropdown-item" href="#">Another action</a>-->
+<!--                            <div class="dropdown-divider"></div>-->
+<!--                            <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link disabled" href="#">Disabled</a>-->
+<!--                    </li>-->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 bg-success text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container bticket" >
+            <form>
+                <h3 class="text-warning" style="margin-left: 40%">Book Here</h3><br>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+<!--                        <label class="form-control">Name</label>-->
+                        <h6 class="text-white">First Name</h6><input type="text" class="form-control" name="fname" placeholder="First Name">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h6 class="text-white">Last Name</h6> <input type="text" class="form-control" name="nme" placeholder="Last Name">
+                    </div><br><br>
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <h6 class="text-white"> number</h6><input type="text" class="form-control" name="id" placeholder=" ID Number XXXXX-XXXXXXX-X">
+                    </div><br><br>
+                    <div class="col-lg-6 col-md-6 col-12">
+                       <h6 class="text-white">Leaving From</h6> <select class="browser-default custom-select form-control">
+                            <option disabled selected>From</option>
+                            <option value="1">Nairobi</option>
+                            <option value="2">Mombasa</option>
+                            <option value="3">Kisumu</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h6 class="text-white">Going To</h6><select class="browser-default custom-select form-control">
+                            <option disabled selected>To</option>
+                            <option>Nairobi</option>
+                            <option>Mombasa</option>
+                            <option>Kisumu</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h6 class="text-white">Depart Date</h6><input type="date" class="form-control" >
+                    </div><br><br>
+                    <div class="col-lg-6 col-md-6 col-12">
+                    <h6 class="text-white">Depart Time</h6>
+                        <select class="brower-default custom-select form-control">
+                            <option disabled selected>Time</option>
+                            <option>1:00 AM </option>
+                            <option>3:20 AM </option>
+                            <option>6:30 AM </option>
+                            <option>7:00 AM </option>
+                            <option>8:40 AM </option>
+                            <option>9:30 AM </option>
+                            <option>11:00 AM </option>
+                            <option>12:40 PM </option>
+                            <option>1:30 PM</option>
+                            <option>2:00 PM</option>
+                            <option>3:30 PM</option>
+                            <option>5:30 PM</option>
+                            <option>6:00 PM</option>
+                            <option>9:30 PM</option>
+                            <option>10:00 PM</option>
+                            <option>11:30 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h6 class="text-white">Quantity</h6>
+                        <select class="browser-default custom-select form-control">
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <h6 class="text-white" > Note</h6>
+                        <p class="text-white text-white text-bold">You can not select more than 5 seats as per agency rule</p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12">
+                       <h6 class="text-white">Credit Card</h6> <input type="text" placeholder="CINIC No. XXXXX-XXXXXXX-X" class="form-control">
+
+                    </div>
+                </div><br>
+
+
+                <div class="col-lg-6 col-md-6 col-12"><br>
+                    <button class="form-control btn btn-success" style="margin-left: 50%">Book Now</button>
+                </div>
+
+            </form>
+            <div class="carousel-caption hearder col-md-5o col-lg-5">
+                <h2 class="text-dark" >Kenyan most inovative Ticket</h2>
+
+            </div>
+            <div class="carousel-caption hearder2">
+                <h2 class="text-dark" >Booking Platform</h2>
+
+            </div>
+        </div>
+
+
+
+
+
+
+</div>
+</header>
+
+
+
+<br><br>
+<!--<section>-->
+<!--    <div class="container-fluid">-->
+<!--        <h1 class="text-center text-capitalize pt-5">about us</h1>-->
+<!--        <hr class="w-25  pt-5">-->
+
+<!--        <div class="row mb-5">-->
+<!--            <div class="col-lg-6 col-md-6 col-12">-->
+<!--                <img src="images/try1.jpg" class="img-fluid " style="height: 280px; width:600px">-->
+<!--            </div>-->
+<!--            <div class="col-lg-6 col-md-6 col-12">-->
+<!--                <h1>Who am I ?</h1>-->
+<!--                <hr>-->
+<!--                <p> My name is shoaib khalid. i did my matriculation from Army public school and currently, doing BCS from comsats university lahore </p>-->
+<!--                <button class="btn bg-primary text-white"> Read More</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+
+
+
+
+
+
+
+<br><br>
+<section>
+    <div class="container-fluid">
+        <h1 class="text-center pt-5"> Special Offers </h1>
+        <hr class="w-25 pt-5">
+    </div>
+
+        <div class="container" style="background-color: #0c5460">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" >
+                        <img class="card-img-top" src="images/offer1.jpg" alt="offer1">
+                        <div class="card-body">
+                            <h4 class="card-title"> Nairobi Express</h4>
+<!--                            <p class="card-text"></p><br>-->
+                            <h6 class="card-text blinking">Till 20 December 2020</h6>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" >
+                        <img class="card-img-top" src="images/offer4.jpg" alt="offer2">
+                        <div class="card-body">
+                            <h4 class="card-title">Kisumu to Nairobi</h4>
+                            <h6 class="card-text blinking">Till 25 October 2020</h6>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card " >
+                        <img class="card-img-top" src="images/offer3.jpg" alt="offer3">
+                        <div class="card-body">
+                            <h4 class="card-title">ONLY Nation Routs</h4>
+                            <h6 class="card-text blinking">Till 3 March 2020 </h6>
+                            <a href="#" class="btn btn-primary ">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<section>
+    <div class="container-fluid">
+        <h1 class="text-capitalize text-center pt-5" >Gallery</h1>
+        <hr class="w-25 pt-5">
+    </div>
+    <div class="row container-fluid">
+        <div class="col-lg-4 col-md-4 col-12 pb-5">
+            <h3 class="text-center">Kisumu</h3>
+            <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active carousel_dimensions">
+                        <img class="d-block w-100 " src="images/islamabad/is1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100" src="images/islamabad/isl2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100" src="images/islamabad/isl3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="carousel-caption col-lg-5">
+                <h4 class="caption">Kisii</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pb-5">
+            <h3 class="text-center">Mombasa</h3>
+            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel_dimensions">
+                        <img class="d-block w-100 " src="images/lahore/lhr1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100" src="images/lahore/lhr2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100" src="images/lahore/lhr3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="carousel-caption col-lg-5">
+                <h4 class="caption">Nairobi</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pb-5">
+            <h3 class="text-center">Kisumu</h3>
+            <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel_dimensions">
+                        <img class="d-block w-100 " src="images/kashmir/kas1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100 " src="images/kashmir/kas2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100" src="images/kashmir/kas3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="carousel-caption col-lg-5">
+                <h4 class="caption">Kisumu</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pb-5">
+            <h3 class="text-center">Mombasa</h3>
+            <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel_dimensions">
+                        <img class="d-block w-100 " src="images/karachi/kar1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100 " src="images/karachi/kar2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100 " src="images/karachi/kar3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="carousel-caption col-lg-5">
+                <h4 class="caption">Eldoret</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pb-5">
+            <h3 class="text-center">Kisii</h3>
+            <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel_dimensions ">
+                        <img class="d-block w-100" src="images/quetta/que1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100" src="images/quetta/que2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100" src="images/quetta/que3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="carousel-caption col-lg-5">
+                <h4 class="caption">Kisii</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pb-5">
+            <h3 class="text-center">Kach</h3>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel_dimensions">
+                        <img class="d-block w-100 " src="images/peshawar/pes1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100 " src="images/peshawar/pes2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item carousel_dimensions">
+                        <img class="d-block w-100 " src="images/peshawar/pes3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="carousel-caption col-lg-5">
+                <h4 class="caption">Mumias</h4>
+            </div>
+        </div>
+<!--        <div class="col-lg-4 col-md-4 col-12 pb-5">-->
+<!--            <img src="images/try3.jpg" class="img-fluid">-->
+<!--        </div>-->
+<!--        <div class="col-lg-4 col-md-4 col-12">-->
+<!--            <img src="images/try3.jpg" class="img-fluid">-->
+<!--        </div>-->
+<!--        <div class="col-lg-4 col-md-4 col-12">-->
+<!--            <img src="images/try3.jpg" class="img-fluid">-->
+<!--        </div>-->
+
+
+    </div>
+
+</section>
+<section>
+    <div class="container-fluid">
+        <h1 class="text-center text-capitalize pt-5">about us</h1>
+        <hr class="w-25  pt-5">
+
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="images/try1.jpg" class="img-fluid " style="height: 280px; width:600px">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h1>Who am I ?</h1>
+                <hr>
+                <p> My name is HASSAN. Doing BCS from JKUAT </p>
+                <button class="btn bg-primary text-white"> Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

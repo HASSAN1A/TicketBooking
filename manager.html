@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container bticket">
+      <form action="webtest.html">
+        <h2 class="text-warning text-center">Update Data</h2>
+        <br />
+        <div class="row">
+          <div class="col-lg-1 col-md-1 col-12">
+            <!--                   <label class="form-control font-weight-bold  ">ID Number</label>-->
+          </div>
+          <div class="col-lg-12 col-md-12 col-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="ID No. XXXXX-XXXXXXX-X"
+              name="m_name"
+            />
+          </div>
+        </div>
+        <br /><br />
+        <h6 class="text-warning">
+          Following Data of above Mentioned ID will be updated.
+        </h6>
+        <br /><br />
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <h6 class="text-white">Leaving From</h6>
+            <select class="browser-default custom-select form-control">
+              <option disabled selected>From</option>
+              <option value="1">Lahore</option>
+              <option value="2">Karachi</option>
+              <option value="3">Islamabad</option>
+            </select>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <h6 class="text-white">Going To</h6>
+            <select class="browser-default custom-select form-control">
+              <option disabled selected>To</option>
+              <option>Lahore</option>
+              <option>Karachi</option>
+              <option>Islamabad</option>
+            </select>
+          </div>
+          <br />
+          <div class="col-lg-6 col-md-6 col-12">
+            <h6 class="text-white">Depart Time</h6>
+            <select class="brower-default custom-select form-control">
+              <option disabled selected>Time</option>
+              <option>1:00 AM</option>
+              <option>3:20 AM</option>
+              <option>6:30 AM</option>
+              <option>7:00 AM</option>
+              <option>8:40 AM</option>
+              <option>9:30 AM</option>
+              <option>11:00 AM</option>
+              <option>12:40 PM</option>
+              <option>1:30 PM</option>
+              <option>2:00 PM</option>
+              <option>3:30 PM</option>
+              <option>5:30 PM</option>
+              <option>6:00 PM</option>
+              <option>9:30 PM</option>
+              <option>10:00 PM</option>
+              <option>11:30 PM</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <h6 class="text-white">Quantity</h6>
+            <select class="browser-default custom-select form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="col-lg-12 col-md-12 col-12">
+            <h6 class="text-white">Credit Card</h6>
+            <input
+              type="text"
+              placeholder="e.g: 5168441223630339"
+              class="form-control"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <br /><button
+              class="btn btn-warning form-control text-white"
+              style="margin-left: 45%"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container delete">
+      <form action="" method="post">
+        <h2 class="text-center text-warning">Delete Data</h2>
+        <div class="row">
+          <h6 class="text-warning">Enter ID to delete the Record</h6>
+          <div class="col-lg-12">
+            <input
+              type="text"
+              placeholder="ID No. XXXXX-XXXXXXX-X"
+              name="id"
+              class="form-control"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <br />
+            <button
+              class="form-control btn btn-danger"
+              style="margin-left: 50%"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br />
+    <div class="container view">
+      <form action="" method="post">
+        <h2 class="text-warning text-center">View Data</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <h6 class="text-warning">Enter ID to View Data</h6>
+            <input
+              type="text"
+              placeholder="CINIC No. XXXXX-XXXXXXX-X"
+              name="id"
+              class="form-control"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <br />
+            <button class="form-control btn-success" style="margin-left: 50%">
+              View
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+  </body>
+</html>
